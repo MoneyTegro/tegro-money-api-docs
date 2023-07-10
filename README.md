@@ -185,17 +185,17 @@ sign = hashlib.md5(str_to_sign.encode()).hexdigest()
 ### Формат запроса
 
 #### Header
-| Authorization | string |Подпись запроса
+| Authorization | string |Подпись запроса | 
 
 #### Body
-| shop_id        | string  | Shop ID
-| nonce          | integer | Уникальный номер запроса
-| currency       | string  | Валюта оплаты, RUB/USD/EUR etc
-| amount         | number  | Сумма оплаты
-| order_id       | string  | Номер заказа в Вашем магазине
-| payment_system | integer | ID платежной системы
-| fields         | array   | Данные о покупателе
-| receipt        | array   | Данные о корзине
+| shop_id        | string  | Shop ID |
+| nonce          | integer | Уникальный номер запроса |
+| currency       | string  | Валюта оплаты, RUB/USD/EUR etc |
+| amount         | number  | Сумма оплаты |
+| order_id       | string  | Номер заказа в Вашем магазине |
+| payment_system | integer | ID платежной системы |
+| fields         | array   | Данные о покупателе |
+| receipt        | array   | Данные о корзине |
 
 ### Формат ответа
 ```
@@ -243,11 +243,11 @@ sign = hashlib.md5(str_to_sign.encode()).hexdigest()
 ### Формат запроса 
 
 #### Header
-| Authorization | string |Подпись запроса
+| Authorization | string |Подпись запроса |
 
 #### Body
-| shop_id | string  | Shop ID
-| nonce   | integer | Уникальный номер запроса 
+| shop_id | string  | Shop ID |
+| nonce   | integer | Уникальный номер запроса |
 
 ### Формат ответа
 ```
@@ -294,11 +294,11 @@ sign = hashlib.md5(str_to_sign.encode()).hexdigest()
 ### Формат запроса 
 
 #### Header
-| Authorization | string |Подпись запроса
+| Authorization | string |Подпись запроса |
 
 #### Body
-| shop_id | string  | Shop ID
-| nonce   | integer | Уникальный номер запроса 
+| shop_id | string  | Shop ID |
+| nonce   | integer | Уникальный номер запроса | 
 
 ### Формат ответа 
 ```
@@ -361,13 +361,13 @@ sign = hashlib.md5(str_to_sign.encode()).hexdigest()
 ### Формат запроса 
 
 #### Header
-| Authorization | string |Подпись запроса
+| Authorization | string |Подпись запроса|
 
 #### Body
-| shop_id   | string  | Shop ID
-| nonce     | integer | Уникальный номер запроса 
-| order_id  | integer | Номер платежа tegro.money
-| payment_id| string  | или номер платежа магазина
+| shop_id   | string  | Shop ID |
+| nonce     | integer | Уникальный номер запроса | 
+| order_id  | integer | Номер платежа tegro.money|
+| payment_id| string  | или номер платежа магазина|
 
 ### Формат ответа 
 ```
@@ -405,12 +405,13 @@ sign = hashlib.md5(str_to_sign.encode()).hexdigest()
 ### Формат запроса 
 
 #### Header
-| Authorization | string |Подпись запроса
+| Authorization | string |Подпись запроса|
 
 #### Body
-| shop_id   | string  | Shop ID
-| nonce     | integer | Уникальный номер запроса 
-| page 	    | integer | Страница
+|-----------|---------|--------------------------|
+| shop_id   | string  | Shop ID|
+| nonce     | integer | Уникальный номер запроса| 
+| page 	    | integer | Страница|
 ### Формат ответа 
 ```
 {
@@ -463,16 +464,16 @@ sign = hashlib.md5(str_to_sign.encode()).hexdigest()
 ### Формат запроса 
 
 #### Header
-| Authorization | string |Подпись запроса
+| Authorization | string |Подпись запроса|
 
 #### Body
-| shop_id        | string  | Shop ID
-| nonce          | integer | Уникальный номер запроса 
-| currency 	     | string  | Валюта RUB / USD / EUR etc
-| account 	     | string  | Номер счета для выплаты
-| amount 	     | number  | Сумма
-| payment_id     | string  | Идентификатор вывода
-| payment_system | integer | Платежная система
+| shop_id        | string  | Shop ID |
+| nonce          | integer | Уникальный номер запроса| 
+| currency 	     | string  | Валюта RUB / USD / EUR etc|
+| account 	     | string  | Номер счета для выплаты|
+| amount 	     | number  | Сумма|
+| payment_id     | string  | Идентификатор вывода| 
+| payment_system | integer | Платежная система| 
 
 ## Проверка выплаты 
 > POST https://tegro.money/api/withdrawal/
@@ -484,7 +485,7 @@ sign = hashlib.md5(str_to_sign.encode()).hexdigest()
 | Authorization | string |Подпись запроса
 
 #### Body
-| shop_id        | string  | Shop ID
-| nonce          | integer | Уникальный номер запроса 
-| order_id       | integer | Номер платежа tegro.money
-| payment_id 	 |string   | или номер платежа магазина
+| shop_id        | string  | Shop ID |
+| nonce          | integer | Уникальный номер запроса| 
+| order_id       | integer | Номер платежа tegro.money|
+| payment_id 	 |string   | или номер платежа магазина|
