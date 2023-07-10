@@ -185,9 +185,13 @@ sign = hashlib.md5(str_to_sign.encode()).hexdigest()
 ### Формат запроса
 
 #### Header
+||||
+| ------------- | ---------------------- | ------------- |
 | Authorization | string |Подпись запроса | 
 
 #### Body
+||||
+| ------------- | ---------------------- | ------------- |
 | shop_id        | string  | Shop ID |
 | nonce          | integer | Уникальный номер запроса |
 | currency       | string  | Валюта оплаты, RUB/USD/EUR etc |
@@ -243,9 +247,13 @@ sign = hashlib.md5(str_to_sign.encode()).hexdigest()
 ### Формат запроса 
 
 #### Header
+||||
+| ------------- | ---------------------- | ------------- |
 | Authorization | string |Подпись запроса |
 
 #### Body
+||||
+| ------------- | ---------------------- | ------------- |
 | shop_id | string  | Shop ID |
 | nonce   | integer | Уникальный номер запроса |
 
@@ -294,9 +302,13 @@ sign = hashlib.md5(str_to_sign.encode()).hexdigest()
 ### Формат запроса 
 
 #### Header
+||||
+| ------------- | ---------------------- | ------------- |
 | Authorization | string |Подпись запроса |
 
 #### Body
+||||
+| ------------- | ---------------------- | ------------- |
 | shop_id | string  | Shop ID |
 | nonce   | integer | Уникальный номер запроса | 
 
@@ -361,9 +373,13 @@ sign = hashlib.md5(str_to_sign.encode()).hexdigest()
 ### Формат запроса 
 
 #### Header
+||||
+| ------------- | ---------------------- | ------------- |
 | Authorization | string |Подпись запроса|
 
 #### Body
+||||
+| ------------- | ---------------------- | ------------- |
 | shop_id   | string  | Shop ID |
 | nonce     | integer | Уникальный номер запроса | 
 | order_id  | integer | Номер платежа tegro.money|
@@ -405,10 +421,13 @@ sign = hashlib.md5(str_to_sign.encode()).hexdigest()
 ### Формат запроса 
 
 #### Header
+||||
+| ------------- | ---------------------- | ------------- |
 | Authorization | string |Подпись запроса|
 
 #### Body
-|-----------|---------|--------------------------|
+||||
+| ------------- | ---------------------- | ------------- |
 | shop_id   | string  | Shop ID|
 | nonce     | integer | Уникальный номер запроса| 
 | page 	    | integer | Страница|
@@ -464,9 +483,13 @@ sign = hashlib.md5(str_to_sign.encode()).hexdigest()
 ### Формат запроса 
 
 #### Header
+||||
+| ------------- | ---------------------- | ------------- |
 | Authorization | string |Подпись запроса|
 
 #### Body
+||||
+| ------------- | ---------------------- | ------------- |
 | shop_id        | string  | Shop ID |
 | nonce          | integer | Уникальный номер запроса| 
 | currency 	     | string  | Валюта RUB / USD / EUR etc|
@@ -482,9 +505,13 @@ sign = hashlib.md5(str_to_sign.encode()).hexdigest()
 ### Формат запроса 
 
 #### Header
+||||
+| ------------- | ---------------------- | ------------- |
 | Authorization | string |Подпись запроса
 
 #### Body
+||||
+| ------------- | ---------------------- | ------------- |
 | shop_id        | string  | Shop ID |
 | nonce          | integer | Уникальный номер запроса| 
 | order_id       | integer | Номер платежа tegro.money|
